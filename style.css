@@ -1,3 +1,96 @@
+html{
+    font-size: 15px;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: "Nunito sans", sans-serif;
+}
+
+
 #name-title{
-    color: green;
+    margin-left: 15px;
+    
+}
+
+#main-info{
+    display: inline;
+    gap: 20px;
+}
+
+#contact{
+    float: right;
+    font-size: smaller;
+    margin-right: 15px;
+    
+}
+
+#summary{
+    position: relative;
+    height: 330px;
+    background-color: #c7ccb1;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    }
+
+#summary img{
+    height: 330px;
+    position: relative;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+#education{
+    float: left;
+    height: 100%;
+    width: 47%;
+}
+
+#experience{
+    width: 47%;
+    height: 100%;
+    float: right;
+}
+
+#skills{
+    float: left;
+    height: 100%;
+    width: 47%;
+}
+
+#certifications{
+    width: 47%;
+    float: right;
+}
+
+#personal-projects{
+    width: 90%;
+
+}
+
+.section{
+    float: left;
+    text-align:justify;
+    padding: 6px;
+    border: 5px double black;
+}
+
+footer{
+    float: inline-end;
+}
+
+@media (max-width: 1049px) and (min-width: 695px) {
+
+    html{
+        
+    }
+    
+}
+
+@media (max-width: 694px) {
+
+    html{
+        
+    }
+    
 }
