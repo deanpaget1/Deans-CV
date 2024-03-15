@@ -7,69 +7,92 @@ html{
 
 
 #name-title{
+    display: inline;
     margin-left: 15px;
-    
 }
 
 #main-info{
-    display: inline;
+    display: inline-flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#main-info .section{
+    
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #contact{
-    float: right;
     font-size: smaller;
     margin-right: 15px;
-    
+    float: right;
+    display: inline;
 }
+
 
 #summary{
     position: relative;
-    height: 330px;
     background-color: #c7ccb1;
     margin-bottom: 20px;
-    width: 100%;
     border: none;
+    display: flex;
     }
 
 #summary img{
-    height: 330px;
-    position: relative;
     padding-right: 10px;
     padding-bottom: 10px;
     float: left;
 }
 
+#summary-info{
+    display: flex;
+    flex-direction: column;
+}
+
 #education{
-    float: left;
     height: 100%;
     width: 47%;
+}
+
+#heriot-watt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hw-date{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 1000;
+}
+
+#education img{
+   
 }
 
 #experience{
     width: 47%;
     height: 100%;
-    float: right;
 }
 
 #skills{
-    float: left;
     height: 100%;
     width: 47%;
 }
 
 #certifications{
     width: 47%;
-    float: right;
 }
 
 #personal-projects{
-    width: 90%;
+    width: 100%;
 
 }
 
 .section{
-    float: left;
     text-align:justify;
     padding: 6px;
     border: 5px double black;
@@ -90,7 +113,7 @@ footer{
 @media (max-width: 694px) {
 
     html{
-        
+
     }
     
 }
