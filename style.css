@@ -2,64 +2,90 @@ html{
     font-size: 15px;
     flex-direction: column;
     overflow-x: hidden;
-    font-family: "Nunito sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
+h1{
+    font-size: 80px;
 
+}
 #name-title{
     display: inline;
     margin-left: 15px;
+    
 }
 
 #main-info{
-    display: inline-flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4fr 1fr 1fr;
+    
+}   
 
 #main-info .section{
-    
     flex-grow: 1;
     flex-shrink: 1;
+    padding: 20px;
+    color: #081c15;
 }
 
-#contact{
+ul{
+    text-align: justify;
+}
+
+#contact-button{
     font-size: smaller;
     margin-right: 15px;
+    height: 2;
     float: right;
     display: inline;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #c7ccb1;
 }
 
+#contact-button img{
+    width: 30px;
+}
 
 #summary{
-    position: relative;
-    background-color: #c7ccb1;
-    margin-bottom: 20px;
-    border: none;
+    background-color: #081c15;
+    color: #d8f3dc;
     display: flex;
+    
     }
 
 #summary img{
     padding-right: 10px;
-    padding-bottom: 10px;
     float: left;
+    
 }
 
 #summary-info{
-    display: flex;
-    flex-direction: column;
+    
 }
+
 
 #education{
     height: 100%;
-    width: 47%;
+    background-color: #d8f3dc;
+    
 }
 
 #heriot-watt{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#leonardo{
+    display: flex;
+    align-items: center;
+}
+
+#leonardo p{
+    float: left;
+    margin-left: 20px;
 }
 
 #hw-date{
@@ -70,32 +96,57 @@ html{
 }
 
 #education img{
-   
+
+    width: 200px;
+    border-radius: 5px;
+}
+
+#contact-button a{
+    color:#575757;
+}
+
+#leonardo img{
+    float: left;
+    width: 300px;
+    border-radius: 5px;
 }
 
 #experience{
-    width: 47%;
+
     height: 100%;
+    background-color: 	#a3b18a;
+}
+
+#experience a{
+    color: #081c15;
 }
 
 #skills{
     height: 100%;
-    width: 47%;
+    background-color: 	#a3b18a;
 }
 
 #certifications{
-    width: 47%;
+    background-color: #d8f3dc;
 }
 
 #personal-projects{
     width: 100%;
+    grid-column: 1 / 3;
+    background-color: #081c15;
+    color: #d8f3dc;
+}
 
+.projects{
+    color: #a3b18a;
+}
+
+.projects a{
+    color: #a3b18a;
 }
 
 .section{
-    text-align:justify;
-    padding: 6px;
-    border: 5px double black;
+    
 }
 
 footer{
