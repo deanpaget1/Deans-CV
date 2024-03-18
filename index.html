@@ -1,169 +1,451 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dean Paget's CV</title>
-        <meta charset="UTF-8"/>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./style.css"/>
+<head>
+    <title>Dean Paget's CV</title>
+    <meta charset="UTF-8" />
 
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
 
-    <body>
+</head>
 
-        <div class="section" id="summary">
-                <img src="./assets/dean-photo.jpg"/>
-                <div id="summary-info">
-                    
-                        <h1 id="name-title">Dean  Paget </h1>
-                        <div id="summary-text">
-                            <h2>Professional Summary</h2>
-                            <p>
-                                Since gaining my degree, I have been an engineer for six years. 
-                                Three years as a hardware/software engineer, two years as a software 
-                                engineer and a year and a half as a senior software engineer. My 
-                                current role uses primarily C programming within its projects and 
-                                requires me to see projects to their release whilst being the only software 
-                                engineer on the job. Recently I have completed two courses to expand my knowledge 
-                                of full stack development and have created many personal projects because of this. 
-                                With this, I would like to be able to transfer my current knowledge of software lifecycle 
-                                and management and new knowledge to a new role.
-                            </p>
-                        </div>
-                        
-                    
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom gap-2">
+            <a href="/"
+                class="gap-2 d-flex align-items-center mb-3 mb-md-0 me-md-auto link-primary-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor"
+                    class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755">
+                    </path>
+                </svg>
+                <span class="fs-4">Dean Paget's CV</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Website</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <section id="prof-summary">
+        <div class="container my-5 prof-container">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg prof-text">
+                <div class="col-lg-4 offset-lg-1 pb-5 overflow-hidden align-items-center">
+                    <img class="rounded-lg-3" src="./assets/dean-photo.jpg" alt="dean paget" width="250px">
                 </div>
-                <button id="contact-button"><a id="contact" href="./public/contact.html"><h2>Contact Me<img src="https://static.thenounproject.com/png/3592988-200.png"/> </h2></a></button>
-                        
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">Professional Summary</h1>
+                    <p class="lead">Since gaining my degree, I have been an engineer for six years.
+                        Three years as a hardware/software engineer, two years as a software
+                        engineer and a year and a half as a senior software engineer. My
+                        current role uses primarily C programming within its projects and
+                        requires me to see projects to their release whilst being the only software
+                        engineer on the job. Recently I have completed two courses to expand my knowledge
+                        of full stack development and have created many personal projects because of this.
+                        With this, I would like to be able to transfer my current knowledge of software lifecycle
+                        and management and new knowledge to a new role.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Contact</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4">Website</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div id="main-info">
-            <div class="section" id="education">
-                    <h2>Education</h2>
-                    <h3>BEng Electrical and Electronic Engineering (Hons)</h3>
-                        <div id="heriot-watt">
-                            <a href="https://www.hw.ac.uk/"><img src="./assets/HeriotWatt.jpg"/></a>
-                            <div id="hw-date">
-                                <p>2013</p>
-                                <p>-</p>
-                                <p>2017</p>
+    <hr />
+
+    <section id="Education" class="first-sect">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Education</h1>
+                    <h2 class="fw-bold text-body-emphasis lh-1 mb-3">BEng Electrical and Electronic Engineering
+                        (Hons)<br />Associate Degree<br />2013 - 2017</h2>
+                    <a href="https://www.hw.ac.uk/"><img src="./assets/HeriotWatt.jpg" class="d-block  img-fluid"
+                            alt="Bootstrap Themes" width="400" loading="lazy"></a>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-group text-body-emphasis">
+                        <li class="list-group-item lead">My forth year dissertation was ‘technical design and
+                            integration of commercial
+                            technologies’ where I designed, built and coded a wearable device that detected
+                            the user gets dangerously close to live distribution lines. I studied IoT
+                            (internet of things), electrical health and safety, and various technologies to
+                            incorporate into my device. SSEN provided the specification for the device. I alone
+                            completed the C++ Programming of the device.</li>
+                        <li class="list-group-item lead">In third year, I was a member of the project group who won the
+                            BP prize for best working
+                            model of a hazardous waste sensor and sorter. My roles were chief public relations
+                            organiser and workshop engineer which included jobs such as:
+                            <ul>
+                                <li>Design and build the model (including appropriate material and joining
+                                    substance choices).</li>
+                                <li>Sensor and trapdoor/servo positioning.</li>
+                                <li>Marketing the finished model.</li>
+                                <li>Helping with other team members jobs.</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item lead">My second year graded unit report looked into powering twenty
+                            homes with an
+                            off-grid renewable power source. I gained information on costs, advantages and
+                            disadvantages,
+                            lifespan and other factors of a run-of-the-river hydro system and a solar system then
+                            compared
+                            them to find the best method of powering 20 homes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section id="Experience" class="second-sect">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Experience</h1>
+                    <h2 class="fw-bold text-body-emphasis lh-1 mb-1">LEONARDO UK</h2>
+                    <h2 class="fw-bold text-body-emphasis lh-1 mb-1">Senior Software Engineer (2022 -
+                        Current)</h2>
+                    <h2 class="fw-bold text-body-emphasis lh-1 mb-1">Software Engineer (2020 -
+                        2022)</h2>
+                    <h2 class="fw-bold text-body-emphasis lh-1 mb-4">Senior Software Engineer (2017 -
+                        2020)</h2>
+                    <a href="https://uk.leonardo.com/en/home"><img src="./assets/leonardo1.jpg"
+                            class="d-block  img-fluid" alt="Bootstrap Themes" width="900" loading="lazy"></a>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-group text-body-emphasis">
+                        <li class="list-group-item lead">My employment within Leonardo involves me in many different
+                            areas of engineering.
+                            For my first three years:
+                            <ul>
+                                <li>I worked as part of the test equipment team working along every stage
+                                    of the design process for the development of test equipment. </li>
+                                <li>I carried out hardware, mechanical and software design using C coding
+                                    language alongside the creation of the relevant documentation.</li>
+                                <li>Supporting roles where I helped with the production of Radar systems,
+                                    assisting with fault finding sub-assemblies, investigating reoccurring faults
+                                    and finding ways to fix these, obsolescence management, assisting with investigating
+                                    ways of reducing rework time. </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item lead">I then worked as a Software Engineer within the test equipment
+                            group for two years.
+                            My work included:
+                            <ul>
+                                <li>Coding primarily in C, where I have seen projects through every stage of
+                                    the Software project lifecycle. </li>
+                                <li>Carry out UI design using Labwindows software.</li>
+                                <li>My main project was the automation of Environmental Stress Screening of
+                                    Radar systems. Within this project my software controlled an environmental
+                                    chamber through various temperatures whilst communicating with a Radar and
+                                    running tests constantly. I was in charge of all software documentation and
+                                    the creation of all the software and relevant drivers.</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item lead">Now as a Senior Software Engineer:
+                            <ul>
+                                <li>I am in charge of software development for six related automated projects. </li>
+                                <li>I carry out tasks from my previous roles whilst taking more charge of the projects.
+                                </li>
+                                <li>I am able to use my experience in all my positions to my advantage through the
+                                    software development process. </li>
+                                <li>I have worked alongside hardware and firmware engineers and can use my experience
+                                    to work with these engineers for better problem solving and creating an advanced
+                                    end product.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section id="skills" class="first-sect">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./assets/skills.gif" alt="" width="60%">
+            <h1 class="display-5 fw-bold text-body-emphasis">Skills</h1>
+            <div class="col-lg-6 mx-auto">
+                <div class="container gap-2 justify-content-center py-5">
+                    <div class="row gap-3">
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/html.webp" alt="">HTML
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/css.png" alt="">CSS
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24"
+                                src="./assets/Javascript_badge.svg.png" alt="">JavaScript
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/Git_icon.svg.png"
+                                alt="">Git
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/github.png"
+                                alt="">GitHub
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/dimensions.png"
+                                alt="">Dimensions
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/React-icon.svg.png"
+                                alt="">React
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/node-js.png"
+                                alt="">Node.js
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/express.png"
+                                alt="">Express
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/python.png"
+                                alt="">Python
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24"
+                                src="./assets/flask-logo-black-and-white.png" alt="">Flask
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/django.png"
+                                alt="">Django
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/sql.png" alt="">SQL
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24"
+                                src="./assets/Kubernetes_logo_without_workmark.svg.png" alt="">Kubernetes
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/openshift.png"
+                                alt="">OpenShift
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/web3.png" alt="">Web3
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/dapp.png" alt="">Dapps
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/C-prog.png"
+                                alt="">C/C++
+                            Programming
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/teststand.png"
+                                alt="">NI
+                            TestStand
+                        </span>
+                        <span
+                            class="col badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill skill-sub">
+                            <img class="rounded-circle me-1" width="24" height="24" src="./assets/CVI.png"
+                                alt="">LabWindows/CVI
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section id="Certifications" class="second-sect">
+        <div class="album py-5 bg-body-tertiary text-center">
+            <h1 class="display-5 pb-3 fw-bold text-body-emphasis">Certifications</h1>
+            <div class="container">
+                <div class="row mx-auto">
+                    <div class="col-12 col-md-6 pb-4">
+                        <div class="card shadow-sm cert-card">
+                            <a
+                                href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=2021PM20"><img
+                                    src="./assets/full-stack-course.png" alt="full stack web development course"
+                                    width="100%"></a>
+                            <div class="card-body">
+                                <h3 class="fw-bold pb-2">The Complete 2024 Web Development Bootcamp.</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group mx-auto">
+                                        <a
+                                            href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=2021PM20"><button
+                                                type="button" class="btn btn-primary me-md-2 fw-bold">View</button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <ul>
-                            <li>My forth year dissertation was ‘technical design and integration of commercial 
-                                technologies’ where I designed, built and coded a wearable device that detected 
-                                the user gets dangerously close to live distribution lines. I studied IoT 
-                                (internet of things), electrical health and safety, and various technologies to 
-                                incorporate into my device. SSEN provided the specification for the device. I alone 
-                                completed the C++ Programming of the device.</li>
-                            <li>In third year, I was a member of the project group who won the BP prize for best working 
-                                model of a hazardous waste sensor and sorter. My roles were chief public relations 
-                                organiser and workshop engineer which included jobs such as:
-                                <ul>
-                                    <li>Design and build the model (including appropriate material and joining 
-                                    substance choices).</li>
-                                    <li>Sensor and trapdoor/servo positioning.</li>
-                                    <li>Marketing the finished model.</li>
-                                    <li>Helping with other team members jobs.</li>
-                                </ul>
-                            </li>
-                            <li>My second year graded unit report looked into powering twenty homes with an 
-                            off-grid renewable power source. I gained information on costs, advantages and disadvantages, 
-                            lifespan and other factors of a run-of-the-river hydro system and a solar system then compared 
-                            them to find the best method of powering 20 homes.</li>
-                        </ul>
-            </div>
-
-            <div class="section" id="experience">
-                <h2>Experience</h2>
-                <h3>Senior Software Engineer (2022 - Current)</h3>
-                <p><b>Software Engineer(2020 - 2022)</b></p>
-                <p><b>Test Equipment Engineer (2017 - 2020)</b></p>
-                <div id="leonardo">
-                    <a href="https://uk.leonardo.com/en/home"><img src="./assets/leonardo.jpg"/></a>
-                    <p><u>LEONARDO UK<br/> 2 Crewe Road North,<br/> Edinburgh,<br/> EH5 2XS</u></p>
-                </div>
-                <ul>
-                    <li>My employment within Leonardo involves me in many different areas of engineering. 
-                        For my first three years:
-                        <ul>
-                            <li>I worked as part of the test equipment team working along every stage 
-                                of the design process for the development of test equipment. </li>
-                            <li>I carried out hardware, mechanical and software design using C coding 
-                                language alongside the creation of the relevant documentation.</li>
-                            <li>Supporting roles where I helped with the production of Radar systems, 
-                                assisting with fault finding sub-assemblies, investigating reoccurring faults 
-                                and finding ways to fix these, obsolescence management, assisting with investigating 
-                                ways of reducing rework time. </li>
-                        </ul>
-                    </li>
-                    <li>I then worked as a Software Engineer within the test equipment group for two years. 
-                        My work included:
-                        <ul>
-                            <li>Coding primarily in C, where I have seen projects through every stage of 
-                                the Software project lifecycle. </li>
-                            <li>Carry out UI design using Labwindows software.</li>
-                            <li>My main project was the automation of Environmental Stress Screening of 
-                                Radar systems. Within this project my software controlled an environmental 
-                                chamber through various temperatures whilst communicating with a Radar and 
-                                running tests constantly. I was in charge of all software documentation and 
-                                the creation of all the software and relevant drivers.</li>
-                        </ul>
-                    </li>
-                    <li>Now as a Senior Software Engineer:
-                        <ul>
-                            <li>I am in charge of software development for six related automated projects. </li>
-                            <li>I carry out tasks from my previous roles whilst taking more charge of the projects.</li>
-                            <li>I am able to use my experience in all my positions to my advantage through the 
-                                software development process. </li>
-                            <li>I have worked alongside hardware and firmware engineers and can use my experience 
-                                to work with these engineers for better problem solving and creating an advanced 
-                                end product.</li>
-                        </ul>
-                    </li>
-                </ul>
-                <a class="link" href="./public/other-work.html">Other Work Experience</a>
-            </div>
-
-            <div class="section" id="skills">
-                <div class="inner-section"> 
-                    <h2>Skills</h2>
-                    <p>HTML | CSS | JavaScript | Git | GitHub | Dimensions | React | Node.js | Express 
-                        | Python | Flask | Django | SQL | Docker | Kubernetes | OpenShift | Web3 | Dapps 
-                        | C/C++ Programming | NI TestStand | LabWindows/CVI </p>
-                </div>
-            </div> 
-            
-            <div class="section" id="certifications">
-                <h2>Certifications</h2>
-                    <ul>
-                        <li>IBM Full Stack Software Developer Course, IBM (on <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer?utm_medium=sem&utm_source=gg&utm_campaign=B2C_EMEA_ibm-full-stack-cloud-developer_ibm_FTCOF_professional-certificates_country-UK-country-GB-new-customer-only&campaignid=20858198086&adgroupid=156937380177&device=c&keyword=ibm%20full%20stack%20software%20developer%20professional%20certificate%20coursera&matchtype=e&network=g&devicemodel=&adposition=&creativeid=691302939061&hide_mobile_promo&gad_source=1&gclid=EAIaIQobChMIopPylOzvhAMVbYBQBh1KIQuREAAYASAAEgKI2fD_BwE">Coursera</a>), 2024
-                        </li>
-                        <li>The Complete 2024 Web Development Bootcamp, <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=2021PM20">Udemy</a> (Dr. Angela Yu), 2024</li>
-                    </ul>
-            </div>        
-
-            <div class="section" id="personal-projects">
-                <div class="projects">
-                    <h2>Personal Projects</h2>
-                    <p>The Following projects can be found <a href="https://github.com/deanpaget1">here:</a></p>
-                    <ul>
-                        <li>Portfolio Webpage - Through my Full Stack course I created a webpage 
-                            for a clients work portfolio with HTML, CSS and JavaScript</li>
-                        <li>React Budget Allocation App – Through my Full Stack course I 
-                            created this app with JavaScript using React.</li>
-                        <li>Node.js and Express App – I assumed the role of a back-end developer to create a 
-                            server-side application that stores, retrieves and manages book ratings and reviews.</li>
-                    </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card shadow-sm cert-card">
+                            <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer?utm_
+                                medium=sem&utm_source=gg&utm_campaign=B2C_EMEA_ibm-full-stack-cloud-developer_ibm_FTCOF_professional
+                                -certificates_country-UK-country-GB-new-customer-only&campaignid=20858198086&adgroupid=156937380177
+                                &device=c&keyword=ibm%20full%20stack%20software%20developer%20professional%20certificate%20coursera
+                                &matchtype=e&network=g&devicemodel=&adposition=&creativeid=691302939061&hide_mobile_promo&gad_sourc
+                                e=1&gclid=EAIaIQobChMIopPylOzvhAMVbYBQBh1KIQuREAAYASAAEgKI2fD_BwE"><img
+                                    src="./assets/ibm-course.png" alt="full stack web development course"
+                                    width="100%"></a>
+                            <title>Placeholder</title>
+                            <div class="card-body">
+                                <h3 class="fw-bold pb-2">IBM Full Stack Software Developer Professional Certificate.
+                                </h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group mx-auto">
+                                        <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer?utm_
+                                            medium=sem&utm_source=gg&utm_campaign=B2C_EMEA_ibm-full-stack-cloud-developer_ibm_FTCOF_professional
+                                            -certificates_country-UK-country-GB-new-customer-only&campaignid=20858198086&adgroupid=156937380177
+                                            &device=c&keyword=ibm%20full%20stack%20software%20developer%20professional%20certificate%20coursera
+                                            &matchtype=e&network=g&devicemodel=&adposition=&creativeid=691302939061&hide_mobile_promo&gad_sourc
+                                            e=1&gclid=EAIaIQobChMIopPylOzvhAMVbYBQBh1KIQuREAAYASAAEgKI2fD_BwE"><button
+                                                type="button" class="btn btn-primary me-md-2 fw-bold">View</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <footer>Dean Paget, 2024.</footer>
-    </body>
+    <hr />
+
+    <section id="personal-projects" class="first-sect" style="background-color: rgba(211, 211, 211, 0.308);">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">Personal Projects</h1>
+            <div class="overflow-hidden mt-3">
+                <div class="container px-5">
+                    <div class="bd-example mb-5 border-0">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/dean-website.png" alt="deans website" width="100%" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="fw-bold"
+                                            style="color: white; font-style: italic; font-variant: small-caps;"><u>Project - Personal
+                                            Portfolio Website</u></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
+                                        height="400" xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%"
+                                            fill="#444" dy=".3em">Second slide</text>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
+                                        height="400" xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%"
+                                            fill="#333" dy=".3em">Third slide</text>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+            </div>
+    
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
 
 
 

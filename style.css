@@ -5,166 +5,57 @@ html{
     font-family: "Inter", sans-serif;
 }
 
-h1{
-    font-size: 80px;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
-}
-#name-title{
-    display: inline;
-    margin-left: 15px;
+.prof-container{
+
+    border-radius: 1%;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg');
+    background-size:cover;
+    
+
+    -webkit-animation: slidein 20s;
+    animation: slidein 20s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;   
     
 }
 
-#main-info{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 4fr 1fr 1fr;
-    
-}   
-
-#main-info .section{
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 20px;
-    color: #081c15;
-}
-
-ul{
-    text-align: justify;
-}
-
-#contact-button{
-    font-size: smaller;
-    margin-right: 15px;
-    height: 2;
-    float: right;
-    display: inline;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #c7ccb1;
-}
-
-#contact-button img{
-    width: 30px;
-}
-
-#summary{
-    background-color: #081c15;
-    color: #d8f3dc;
-    display: flex;
-    
-    }
-
-#summary img{
-    padding-right: 10px;
-    float: left;
-    
-}
-
-#summary-info{
-    
+#prof-summary{
+        color: black;
 }
 
 
-#education{
-    height: 100%;
-    background-color: #d8f3dc;
-    
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:1570px; }
+    to {background-position: -100px 0px;background-size:2050px;}
 }
 
-#heriot-watt{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+@keyframes slidein {
+    from {background-position: top;background-size:1570px; }
+    to {background-position: -100px 0px;background-size:2050px;}
 }
 
-#leonardo{
-    display: flex;
-    align-items: center;
+.skill-sub{
+    max-width: 150px;
 }
 
-#leonardo p{
-    float: left;
-    margin-left: 20px;
+.cert-card{
+    min-height: 400px;
 }
 
-#hw-date{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-weight: 1000;
-}
 
-#education img{
 
-    width: 200px;
-    border-radius: 5px;
-}
-
-#contact-button a{
-    color:#575757;
-}
-
-#leonardo img{
-    float: left;
-    width: 300px;
-    border-radius: 5px;
-}
-
-#experience{
-
-    height: 100%;
-    background-color: 	#a3b18a;
-}
-
-#experience a{
-    color: #081c15;
-}
-
-#skills{
-    height: 100%;
-    background-color: 	#a3b18a;
-}
-
-#certifications{
-    background-color: #d8f3dc;
-}
-
-#personal-projects{
-    width: 100%;
-    grid-column: 1 / 3;
-    background-color: #081c15;
-    color: #d8f3dc;
-}
-
-.projects{
-    color: #a3b18a;
-}
-
-.projects a{
-    color: #a3b18a;
-}
-
-.section{
-    
-}
-
-footer{
-    float: inline-end;
-}
-
-@media (max-width: 1049px) and (min-width: 695px) {
-
-    html{
-        
-    }
-    
-}
-
-@media (max-width: 694px) {
-
-    html{
-
-    }
-    
+#prof-summary img{
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
