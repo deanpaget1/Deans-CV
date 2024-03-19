@@ -30,8 +30,14 @@ html{
 
 #prof-summary{
         color: black;
+        padding-top: 50px;
 }
 
+.top-header{
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
 
 @-webkit-keyframes slidein {
     from {background-position: top; background-size:1570px; }
